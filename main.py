@@ -12,27 +12,27 @@ print("Coordenadas del punto b: ", b)
 print("Coordenadas del punto c: ", c)   
 print("Coordenadas del punto d: ", d)
  #cuadrantes
-print("Cuadrante del punto a: ", a.cuadrantes())
-print("Cuadrante del punto c: ", c.cuadrantes())
-print("Cuadrante del punto d: ", d.cuadrantes())
+print("Cuadrante del punto a: ", Punto.cuadrantes(a))
+print("Cuadrante del punto c: ", Punto.cuadrantes(c))
+print("Cuadrante del punto d: ", Punto.cuadrantes(d))
 
 #vector
-print("Vector entre a y b: ", a.vector(b))
-print("Vector entre b y a: ", b.vector(a))
+print("Vector entre a y b: ", Punto.vector(a,b))
+print("Vector entre b y a: ", Punto.vector(a,b))
 
 #distancia
-print("Distancia entre a y b: ", a.distancia(b))
-print("Distancia entre b y a: ", b.distancia(a))
+print("Distancia entre a y b: ", Punto.distancia(b,a))
+print("Distancia entre b y a: ", Punto.distancia(a,b))
 
 #cual se encuantra mas lejos de d
-print("Distancia entre a y d: ", a.distancia(d))
-print("Distancia entre b y d: ", b.distancia(d))
-print("Distancia entre c y d: ", c.distancia(d))
+print("Distancia entre a y d: ", Punto.distancia(d,a))
+print("Distancia entre b y d: ", Punto.distancia(d,b))
+print("Distancia entre c y d: ", Punto.distancia(d,c))
 
 #crear rectangulo
 print("Rectangulo")
 r= Rectangulo(a, b)
-print("Base: ", r.base())
-print("Altura: ", r.altura())
-print("Area: ", r.area())
+print("Base: ", Rectangulo.base(r))
+print("Altura: ", Rectangulo.altura(r))
+print("Area: ", Rectangulo.area(r))
 
